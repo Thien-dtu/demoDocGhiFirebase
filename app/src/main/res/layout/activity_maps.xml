@@ -19,13 +19,13 @@
         android:orientation="horizontal">
 
         <EditText
-            android:id="@+id/editTextTextPersonName"
+            android:id="@+id/edtDiemDen"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPersonName"
             android:minHeight="48dp"
-            android:text="Nhập địa điểm" />
+            android:hint="Nhập điểm muốn đến"/>
 
         <Button
             android:id="@+id/btnTim"
@@ -37,6 +37,30 @@
             tools:ignore="MissingConstraints"
             android:textAllCaps="false" />
 
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edtDiemDi"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:hint="Nhập địa điểm bắt đầu" />
+
+        <Button
+            android:id="@+id/btnChiDuong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chỉ đường"
+            tools:layout_editor_absoluteX="267dp"
+            tools:layout_editor_absoluteY="24dp"
+            tools:ignore="MissingConstraints"
+            android:textAllCaps="false" />
 
     </LinearLayout>
 
@@ -55,14 +79,29 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/btnZoomIn"
+        <ImageView
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="5dp"
+            android:src="@drawable/ic_clock"/>
+
+        <TextView
+            android:id="@+id/txtThoiGian"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="+"/>
 
-        <Button
-            android:id="@+id/btnZoomOut"
+        <ImageView
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_distance"/>
+
+        <TextView
+            android:id="@+id/txtKhoangCach"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="-"
